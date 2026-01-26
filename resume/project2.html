@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PL/0 Compiler and Virtual Machine</title>
+</head>
+
+<body>
+  <header>
+    <h1>PL/0 Compiler and Virtual Machine</h1>
+    <p>Spring 2024 COP 3402 — Systems Software</p>
+    <nav>
+      <a href="index.html">Back to Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <figure>
+        <img src="../images/project2.png" alt="PL/0 compiler output showing assembly code and symbol table">
+        <figcaption>PL/0 compiler output with generated assembly and symbol table</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Project Description</h2>
+      <p>
+        This project extends a previously developed PL/0 compiler to support additional
+        language features including procedure declarations, call statements, and
+        <code>if-else-fi</code> control structures. The compiler performs recursive descent
+        parsing with error detection, manages a symbol table across lexical levels, and
+        generates intermediate assembly code for execution on a virtual machine.
+      </p>
+      <p>
+        The virtual machine was also enhanced to support the modulo operation
+        (<code>OPR 0 11</code>). If no errors are detected, the compiler outputs a readable
+        assembly listing, displays the symbol table, and generates a numeric instruction
+        file for execution.
+      </p>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Recursive descent parsing with immediate lexical, syntactic, and semantic error detection</li>
+        <li>Symbol table management across lexical levels using a marking algorithm</li>
+        <li>Support for procedures, call statements, and if-else control structures</li>
+        <li>Intermediate assembly code generation and virtual machine execution</li>
+        <li>Enhanced VM support for modulo arithmetic operations</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills Learned</h2>
+      <ul>
+        <li>Compiler design and implementation</li>
+        <li>Recursive descent parsing techniques</li>
+        <li>Virtual machine architecture</li>
+        <li>Low-level debugging and error handling</li>
+        <li>C programming and memory management</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dalyn Ho</p>
+  </footer>
+</body>
+</html>
 
