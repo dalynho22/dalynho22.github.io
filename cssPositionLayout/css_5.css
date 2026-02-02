@@ -1,1 +1,143 @@
+/* reset, removes default browser spacing*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*uniform font for everything with backup font*/
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* =====Jump Menu=====*/
+#jumpMenu {
+    position: fixed; /*anchored in browser*/
+    top: 0; 
+    left: 0; /*pins menu to top-left corner*/
+    width: 15%; /*takes up 15% of screen*/
+    height: 100vh; /*vh = viewport height, spans entire height of page*/
+    padding: 15px; 
+    line-height: 1.5em;
+    background-color: #B8916A;
+    color: #F7F2EE; 
+    border-right: 2px solid #A97D51;
+}
+
+#jumpMenu h2 {
+    margin-bottom: 18px; /*line break between "Jump to An Article" and links*/
+}
+
+#jumpMenu a {
+    display: block; /*put each link in own line*/
+    margin-bottom: 8px;
+    text-decoration: underline;
+    color: #f0ebe7;
+}
+
+/* =====Main Content=====*/
+main { /*everything exlcuding Jump menu*/
+    margin-left: 15%; /*push body content to right, start from where Jumpmenu ends*/
+    padding-top: 80px; /*bc we will add fixed header*/
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#F7F2EE ;
+}
+
+/* =====Header (Sticky Top)=====*/
+header { /*happens after main, overrides old/prev style commands */
+    position: fixed;
+    top: 0;
+    left: 15%;
+    width: 85%; /*fills up the rest of screen that Jumpmenu doesn't*/
+    height: 70px;
+    background-color: #CF91BE;
+    color: #F7F2EE; 
+    border-bottom: 2px solid #BF6EAA;
+
+    display: flex; /*flexbox*/
+    align-items: center;
+    justify-content: space-between; /*places MyBlog.com on left, buttons on right*/
+
+    padding: 0 30px;
+    z-index: 10;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #F7F2EE;
+    background-color:#BF6EAA;
+    border-color: #B860A2;
+}
+
+/* =====Page Title=====*/
+h1 {
+    margin: 20px 0;
+    color: #7B6578;
+}
+
+/* =====Articles Container===== */
+#container {
+    display: flex; /*puts articles in a row*/
+    flex-wrap: wrap; /*allows wrapping to next line*/
+    gap: 20px; /*space between articles*/
+    color: #7B6578;
+}
+
+/* =====Individual Articles===== */
+article {
+    width: 300px;
+    padding: 15px;
+    border: 3px solid #D0BEC5;
+    background-color: #E1D6DB;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article p a{
+    color: #652E70;
+}
+
+/* =====Thank You Message===== */
+#thanks {
+    position: fixed; /*stuck at bottom right*/
+    bottom: 10px;
+    right: 10px;
+    background-color: #8FDBA5;
+    color: #4A262C;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    border: 2px solid #5DCB7C;
+}
+
+/* =====Footer=====*/
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 2px solid #D0BEC5;
+    color: #524757;
+}
+
+footer p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+address span {
+    display: inline-block;
+    margin-right: 10px;
+}
 
