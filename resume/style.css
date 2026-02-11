@@ -59,12 +59,6 @@ header a:hover {
   text-decoration: underline;
 }
 
-.icon-link {
-  width: 8px;
-  height: 8px;
-  vertical-align: middle;
-}
-
 /* ===== Sections ===== */
 main {
   margin-top: 20px;
