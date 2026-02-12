@@ -53,3 +53,49 @@ function addMultiplesToArray(){
 
     console.log(arr);
 }
+
+function printCarObject() {
+    let car = {
+        //.value is used for form inputs(not .textContent)
+        cType: document.getElementById("carType").value,
+        cMPG: document.getElementById("carMPG").value,
+        cColor: document.getElementById("carColor").value
+    };
+
+    console.log(car);
+}
+
+/* .value is specifically used for form controls (like <input>, <select>, <textarea>, and <button>) 
+to get or set the data they contain. This is the data that would be submitted with a form. */
+
+/* .textContent is used for all other HTML elements (like <div>, <p>, <span>, <h1>, etc.) 
+to get or set the plain text content between their opening and closing tag */
+function loadCar(num) {
+    let car;
+
+    if (num === 1) {
+        car = carObject1;
+    } else if (num === 2) {
+        car = carObject2;
+    } else if (num === 3){
+        car = carObject3;
+    }
+
+    document.getElementById("carType").value = car.cType;
+    document.getElementById("carMPG").value = car.cMPG;
+    document.getElementById("carColor").value = car.cColor;
+}
+
+/* Set style using pure JavaScript .style property applies to individual DOM elements. 
+It's a collection of objects Copy document.body.style */
+function changeColor(num) {
+    let paragraph = document.getElementById("styleParagraph");
+
+    if (num === 1) {
+        paragraph.style.color = "red";
+    } else if (num === 2) {
+        paragraph.style.color = "green";
+    } else if (num ===3 ) {
+        paragraph.style.color = "blue";
+    }
+}
