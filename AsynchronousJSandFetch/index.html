@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon Team Builder</title>
 
+  <!-- External CSS -->
+  <link rel="stylesheet" href="pokeStyle.css" />
+</head>
+
+<body>
+  <main class="app">
+    <!-- LEFT PANEL -->
+    <section class="panel builder" aria-label="Pokemon Builder">
+      <div class="spriteFrame">
+        <div class="spriteArea">
+          <img id="pokemonImg" alt="Pokemon sprite" src="" />
+          <div class="pokeNameTag" id="pokemonNameTag">—</div>
+        </div>
+      </div>
+
+      <div class="searchRow">
+        <input
+          id="pokemonInput"
+          type="text"
+          placeholder="e.g. 25 or pikachu"
+          autocomplete="off"
+        />
+        <button id="searchBtn" type="button">SEARCH</button>
+      </div>
+
+      <div class="audioBlock">
+        <div class="label">Sound:</div>
+        <audio id="pokemonAudio" controls></audio>
+      </div>
+
+      <div class="movesBlock">
+        <div class="label">Select Moveset:</div>
+
+        <select id="move1">
+          <option value="">Select Move</option>
+        </select>
+
+        <select id="move2">
+          <option value="">Select Move</option>
+        </select>
+
+        <select id="move3">
+          <option value="">Select Move</option>
+        </select>
+
+        <select id="move4">
+          <option value="">Select Move</option>
+        </select>
+      </div>
+
+      <button id="addToTeamBtn" type="button" disabled>ADD TO TEAM</button>
+      <p id="statusMsg"></p>
+    </section>
+
+    <!-- RIGHT PANEL -->
+    <section class="panel" aria-label="Team Panel">
+      <div class="teamTop">
+        <h2>Team</h2>
+        <div id="teamCount">(0/6)</div>
+      </div>
+
+      <div class="teamInner">
+        <div id="teamContainer">
+          <!-- JS will insert team cards here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="poke.js"></script>
+</body>
+</html>
