@@ -11,7 +11,7 @@ const PROJECTS = [
     id: "teatimewthi",
     title: "Teatimewthi — Depop Logo + Branding",
     category: "branding",
-    href: "./projects/teatimewthi.html",
+    href: "./teatimewthi.html",
     cover: IMG_BASE + "teatimewthiDEPOP.png",
     description:
       "Logo/branding for a Depop clothing seller. Main element: a tea pot bunny I painted.",
@@ -21,7 +21,7 @@ const PROJECTS = [
     id: "dejavuvtg",
     title: "Dejavuvtg — Instagram Profile Branding",
     category: "branding",
-    href: "./projects/dejavuvtg.html",
+    href: "./dejavuvtg.html",
     cover: IMG_BASE + "dejavuvtgPFP.png",
     description:
       "Instagram profile picture created for a vintage clothing seller using Canva.",
@@ -31,7 +31,7 @@ const PROJECTS = [
     id: "instastories",
     title: "Instagram Stories — Personal Story Designs",
     category: "social",
-    href: "./projects/instastories.html",
+    href: "./instastories.html",
     cover: IMG_BASE + "instaStory1.jpg",
     description:
       "A set of Instagram story designs I like to create when posting.",
@@ -41,7 +41,7 @@ const PROJECTS = [
     id: "scrapbook",
     title: "Scrapbook — Physical Collage Work",
     category: "hobby",
-    href: "./projects/scrapbook.html",
+    href: "./scrapbook.html",
     cover: IMG_BASE + "scrap1.jpg",
     description:
       "My biggest hobby — physical scrapbook spreads (grouped as one project).",
@@ -51,7 +51,7 @@ const PROJECTS = [
     id: "parkingapp",
     title: "UCF Parking App Design — UI Concept (Figma)",
     category: "uiux",
-    href: "./projects/parking-app.html",
+    href: "./parking-app.html",
     cover: IMG_BASE + "parkingAppDesign.png",
     description:
       "Figma concept from Foundations of HCI: application proposal idea to help UCF parking issues.",
