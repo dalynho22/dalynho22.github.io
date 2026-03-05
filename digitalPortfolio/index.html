@@ -1,1 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalyn Ho — Digital Portfolio</title>
+    <meta name="description" content="Graphic design + digital marketing portfolio: social media, logos, web visuals, and product branding." />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
 
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">DH</span>
+          <span class="brand-name">Dalyn Ho</span>
+        </a>
+
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Graphic + Multimedia Design</p>
+            <h1>Design for social, branding, and digital marketing.</h1>
+            <p class="subhead">
+              With a focus on clean composition, consistency, and eye-catching layouts.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact</a>
+            </div>
+
+            <div class="hero-badges">
+              <span class="badge">Canva • Figma</span>
+              <span class="badge">Social + Branding</span>
+              <span class="badge">Image Editing</span>
+            </div>
+          </div>
+
+          <aside class="card hero-card">
+            <h2 class="card-title">What this portfolio shows</h2>
+            <ul class="checklist">
+              <li>Social media visuals: Instagram stories + profile pictures</li>
+              <li>Branding/logos for small sellers</li>
+              <li>UI design concept work: Figma</li>
+              <li>Creative hobby work : scrapbooking</li>
+            </ul>
+            <div class="card-divider"></div>
+            <p class="muted small">
+              Click a project to view the full set + details.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Projects</h2>
+              <p class="muted">Grouped by what you made (branding, stories, UI, hobby). Click to open a project page.</p>
+            </div>
+
+            <div class="work-controls">
+              <div class="search">
+                <input id="searchInput" type="search" placeholder="Search projects (logo, story, figma, scrapbook)..." autocomplete="off" />
+              </div>
+
+              <div class="filters">
+                <button class="chip active" data-filter="all" type="button">All</button>
+                <button class="chip" data-filter="branding" type="button">Branding</button>
+                <button class="chip" data-filter="social" type="button">Social</button>
+                <button class="chip" data-filter="uiux" type="button">UI/UX</button>
+                <button class="chip" data-filter="hobby" type="button">Hobby</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="projectGrid" class="gallery" aria-live="polite"></div>
+          <p id="emptyState" class="empty muted" hidden>No results. Try a different filter or keyword.</p>
+        </div>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="container two-col">
+          <div>
+            <h2>About</h2>
+            <p>
+              I’m an Information Technology student from the University of Central Florida. 
+              I enjoy creating digital visuals for those I know and taking on interesting projects. 
+            </p>
+            <!--Add notes to this as needed-->
+            <p class="muted">
+              
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Strengths</h3>
+            <ul class="bullets">
+              <li><strong>Consistency:</strong> matching colors/type across assets</li>
+              <li><strong>Visual detail:</strong> composition, spacing, readability</li>
+              <li><strong>Creative variety:</strong> branding + stories + UI concepts</li>
+              <li><strong>Organization:</strong> grouped assets + clear naming</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container two-col">
+          <div>
+
+            <h2>Contact</h2>
+
+            <div class="contact-links">
+              <a class="link" target="_blank" rel="noreferrer" href="https://mail.google.com/mail/?view=cm&fs=1&to=dalynho22@gmail.com">Email Me</a>
+              <a class="link" href="https://github.com/dalynho22" target="_blank" rel="noreferrer">Explore my GitHub</a>
+              <a class="link" href="https://www.linkedin.com/in/dalyn-ho-310a4b277" target="_blank" rel="noreferrer">Let's Connect on LinkedIn</a> 
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">© <span id="year"></span> Dalyn Ho</p>
+        <a class="muted" href="#projects">Back to projects ↑</a>
+      </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
