@@ -44,7 +44,7 @@ const PROJECTS = [
     href: "./scrapbook.html",
     cover: IMG_BASE + "scrap1.jpg",
     description:
-      "My biggest hobby — physical scrapbook spreads (grouped as one project).",
+      "My biggest hobby — physical scrapbook spreads.",
     tags: ["Hobby", "Composition", "Collage"]
   },
   {
